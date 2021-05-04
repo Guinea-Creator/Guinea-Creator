@@ -1,0 +1,441 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+  display: grid;
+  align-items:center; 
+  grid-template-columns: (1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+ "icon"
+  } 
+
+.top-banner-section{
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: 350px;
+grid-column-gap: 8 px;
+grid-row-gap: 8 px;
+align-content: center;
+justify-content: center;
+}
+
+
+
+.banner-graph1-div{
+  grid-area: 1 / 1 / 2 / 2;}
+
+.banner-icon-div{
+  grid-area: 1 / 1 / 2 / 2;
+  margin-top: 15px;
+margin-left: 35em;
+width: 25px;
+height: 25px;}
+
+
+.banner-graph1-div{
+  display: grid;
+  min-width: 350px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Main CSS*/
+.main{  
+  display: grid;
+  grid-template-columns: (1fr);
+  height: 20vh !important;
+  grid-gap: 3px;
+  justify-items: center;
+  align-items: center;
+  padding-bottom: 40vh;
+  background-color: rgb(245, 238, 242) !important;
+  grid-template-rows: auto;
+  }
+
+/* ABOUT ME CSS*/
+.about{
+  grid-template-columns: (1fr);
+  height: 53vh !important;
+  grid-gap: 3px;
+  justify-items: center;
+  align-items: center;
+  
+  padding-left:4em ;
+  padding-top:2em ;
+  padding-bottom: 2em;
+  font-size:1.3em;
+  line-height: 1.5rem;
+  background-color: rgb(248, 246, 247);
+  column-count: 2;}
+
+
+ 
+
+.p{
+text-align: justify;}
+
+
+/* CONTACT CSS */
+.contact {
+  display: grid;
+  grid-template-columns: (1fr);
+  grid-gap: 3px;
+  justify-items: center;
+  align-items: center;
+  height: 20vh !important;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  max-width: 300%;
+  font-size:1.3em;
+  line-height: 1.5rem;
+  background-color: rgb(248, 246, 247);
+ position: absolute;
+ top: 1395px;
+ 
+  margin
+  grid-template-areas:
+  ". title title ."
+  ". icon wrapper ."
+}
+
+.address{
+  padding-top: 1px;
+  grid-area: left;
+  position: relative;
+  bottom: 190px;
+  left: 20px;
+}
+
+
+
+
+.contact-title {
+  font-size: 2em;
+  grid-area: title;
+  padding-bottom: 85px;
+  padding-top:  15px;}
+
+  
+ 
+.contact-wrapper {
+  grid-area: wrapper
+}
+
+.p{
+  text-indent: 2em;}
+
+.icon.png{
+  margin-left: 60px;
+
+   width: 200px;
+}
+
+
+
+
+
+  /* 
+  .icon-header {
+    background-image:url("images/graph1.svg");
+    /* grid-area: icon; */
+    /*width: 200px;*/
+    /* height: auto; */
+   /* margin-left:40%;
+  }
+  */
+
+
+
+  /* .icon-contact {
+    grid-area: icon;
+    padding-top: 20px;
+    width: 200px;
+    height: auto;
+  }
+
+
+/* Major colors of Background */
+header{
+  background-color: rgb(235, 163, 190);
+}
+
+
+main{
+  background-color: rgb(245, 23, 23);
+}
+
+.about{ 
+  background-color: rgb(243, 187, 220);
+}
+
+.contact{ 
+  background-color: rgb(243, 118, 191);
+}
+
+footer{
+  background-color: rgb(235, 163, 190);
+}
+
+
+/* NAVBAR CSS */
+nav{
+    padding-left:4em;
+    padding-right: 4em;
+    position: fixed;
+    width: 100%;
+    top:0;
+    left:0;
+    z-index:10;
+  }
+
+  nav ul {
+    margin:0;
+    padding:0;
+    display:flex;
+  }
+  nav li{
+    padding: 1em 0;
+    list-style-type: none;
+    padding: 25px;
+    font-size: 2em;
+  }
+  
+  nav li a {
+    color:rgb(15, 15, 14);
+    font-weight: 600;
+    opacity: 0.6;
+    text-decoration: none;
+    transition: .3s;
+  }
+  
+  nav li a:hover {
+    color:rgb(240, 253, 57);
+    opacity: 1;
+    text-decoration: none;
+  }
+
+
+
+/* IMAGE GALLERY CSS */
+.image-gallery {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr minmax(350px, 1fr)  minmax(350px, 1fr) minmax(350px, 1fr) 1fr;
+  grid-template-rows: auto;
+  grid-gap: 10px;
+  padding-top: 500px;
+  padding-bottom: 100px;
+
+  grid-template-areas:
+  ". a b c ."
+  ". d e f ."
+  ;
+}
+
+.box-styling {
+  height: 350px;
+  background-color: rgb(110, 110, 110);
+  /* clip-path: polygon(5% 5%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%); */
+}
+
+.box-wrapper{
+height:350px;
+border-radius: 1%;
+}
+.box1 {
+  grid-area: a;
+}
+
+
+
+.box2 {
+  grid-area: b;
+}
+
+.box3 {
+  grid-area: c;
+}
+
+.box4 {
+  grid-area: d;
+}
+
+.box5 {
+  grid-area: e;
+}
+
+.box6 {
+  grid-area: f;
+}
+
+
+
+
+
+
+   /* footer section */
+   footer{
+    grid-area:footer;
+    height: 5vh !important;
+    grid-gap: 3px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    justify-items: center;
+    align-items: center;
+  }
+  footer p{
+    font-size:2em;
+  }
+  footer li {
+    display:inline;
+  }
+  footer ul {
+    max-width: 640px;
+    margin: 2em auto;
+    padding:0;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+  }
+  footer ul li{
+    list-style: none;
+    align-self:flex-end;
+  }
+  footer ul li a {
+    text-decoration:none;
+    color: black;
+    opacity:.6;
+    transition: .3s;
+  }
+  footer ul li a:hover {
+    text-decoration:none;
+    color:white;
+  }
+  footer svg {
+    width:20%;
+  }
+  footer p{
+    font-size: 1em;
+  }
+
+
+
+  /* MEDIA QUERY FOR SMALL SCREENS */
+ @media (max-width:1100px){
+    .image-gallery {
+      padding-bottom: 0px;
+        margin-bottom: 600px;
+        grid-template-columns: 1fr minmax(350px, 1fr) minmax(350px, 1fr) 1fr;
+        grid-template-areas:
+        ". a b ."
+        ". c d ."
+        ". e f ."
+        ;
+    }
+ }
+
+/* MEDIA QUERY FOR MOBILE */
+ @media (max-width:735px){
+     nav {
+         padding-left: 0;
+     }
+
+    .image-gallery {
+        padding-bottom: 200%;
+        grid-template-columns: 1fr minmax(400px, 1fr) 1fr;
+        grid-template-areas:
+        ".a."
+        ".b."
+        ".c."
+        ".d."
+        ".e."
+        ".f."
+        ;
+    }
+
+    .contact {
+        padding-bottom: 200%;
+        grid-template-columns: 3fr minmax(2fr, 1fr) 3fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        ". title ."
+        ". icon ."
+        ". wrapper ."
+        ;
+    }
+    
+ }
+
+/* Grid from my resume */
+/* Step 2 This builds your desktop and tablet grid */
+.container{
+  display: grid;
+  background-color:rgb(235, 146, 177);
+  height: 100%;
+  grid-gap: 3px;
+  grid-template-columns: (repeat 2, 1fr);
+  grid-template-rows: auto;
+
+  grid-template-areas:
+  "h  h"
+  "o  t"
+  "e  t"
+  "x  c"
+  "f  f";
+}
+
+/* Step 3 Build your mobile grid What becomes active when the pixels are 800 or less*/
+@media screen and (max-width: 800px) {
+
+.container{
+display: grid;
+background-color: rgb(241, 142, 183);
+grid-gap: 3px;
+grid-template-columns: 1fr;
+grid-template-rows: auto;
+grid-template-areas:
+"h"
+"o"
+"e"
+"p"
+"t"
+"c"
+"f";
+}
+
+/* Step 1 This Starts the section css tags */
+.objective{
+  grid-area: o;
+}
+
+  header{
+      grid-area: h;
+  }
+
+  .education{
+      grid-area: e;
+  }
+
+  .experience{
+      grid-area: p;
+  }
+
+  .technical-skills{
+      grid-area: t;
+  }
+
+  .community-service{
+      grid-area: c;
+  }
+
+footer{
+      grid-area: f;}
+}
+
+
+
