@@ -1,0 +1,163 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+  display: grid;
+  align-items:center; 
+  grid-template-columns: (1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+ "icon"
+  } 
+
+.top-banner-section{
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: 350px;
+height: 10vh:
+align-content: center;
+justify-content: center;
+}
+
+.banner-graph-div{
+  grid-area: 1 / 1 / 1 / 1;
+}
+
+
+.icon{
+display: grid;
+padding-top: 5px;
+padding-bottom: 25px;
+margin-left: 2px;
+min-width: 350px;
+width: 9%;
+height: 9%
+object-fit cover;
+}
+
+.
+
+/* Main CSS*/
+.main{  
+    display: grid;
+    grid-template-columns: (1fr);
+    height: 20vh !important;
+    grid-gap: 3px;
+    justify-items: center;
+    align-items: center;
+    padding-bottom: 40vh;
+    background-color: rgb(245, 238, 242) !important;
+    grid-template-rows: auto;
+    }
+
+    * Major colors of Background */
+header{
+  background-color: rgb(235, 163, 190);
+}
+
+
+main{
+  background-color: rgb(245, 23, 23);
+}
+
+.about{ 
+  background-color: rgb(243, 187, 220);
+}
+
+.contact{ 
+  background-color: rgb(243, 118, 191);
+}
+
+footer{
+  background-color: rgb(235, 163, 190);
+}
+
+
+/* NAVBAR CSS */
+nav{
+    padding-left:4em;
+    padding-right: 4em;
+    position: fixed;
+    width: 100%;
+    top:0;
+    left:0;
+    z-index:10;
+  }
+
+  nav ul {
+    margin:0;
+    padding:0;
+    display:flex;
+  }
+  nav li{
+    padding: 1em 0;
+    list-style-type: none;
+    padding: 25px;
+    font-size: 2em;
+  }
+  
+  nav li a {
+    color:rgb(15, 15, 14);
+    font-weight: 600;
+    opacity: 0.6;
+    text-decoration: none;
+    transition: .3s;
+  }
+  
+  nav li a:hover {
+    color:rgb(240, 253, 57);
+    opacity: 1;
+    text-decoration: none;
+  }
+
+  
+
+
+
+   /* footer section */
+   footer{
+    grid-area:footer;
+    height: 5vh !important;
+    grid-gap: 3px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    justify-items: center;
+    align-items: center;
+  }
+  footer p{
+    font-size:2em;
+  }
+  footer li {
+    display:inline;
+  }
+  footer ul {
+    max-width: 640px;
+    margin: 2em auto;
+    padding:0;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+  }
+  footer ul li{
+    list-style: none;
+    align-self:flex-end;
+  }
+  footer ul li a {
+    text-decoration:none;
+    color: black;
+    opacity:.6;
+    transition: .3s;
+  }
+  footer ul li a:hover {
+    text-decoration:none;
+    color:white;
+  }
+  footer svg {
+    width:10%;
+  }
+  footer p{
+    font-size: 1em;
+  }
