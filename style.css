@@ -128,7 +128,7 @@ text-align: justify;}
   text-indent: 2em;}
 
 .icon.png{
-  margin-left: 10px;
+  margin-left: 8px;
 
    width: 15px;
    height: 15px;
@@ -213,7 +213,7 @@ nav{
   }
   
   nav li a:hover {
-    color:rgb(240, 253, 57);
+    color:rgb(242, 243, 223);
     opacity: 1;
     text-decoration: none;
   }
@@ -278,49 +278,54 @@ border-radius: 1%;
 
 
    /* footer section */
-   footer{
-    grid-area:footer;
-    height: 5vh !important;
-    grid-gap: 3px;
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-    justify-items: center;
-    align-items: center;
-  }
-  footer p{
-    font-size:2em;
-  }
-  footer li {
-    display:inline;
-  }
-  footer ul {
-    max-width: 640px;
-    margin: 2em auto;
-    padding:0;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-  }
-  footer ul li{
-    list-style: none;
-    align-self:flex-end;
-  }
-  footer ul li a {
-    text-decoration:none;
-    color: black;
-    opacity:.6;
-    transition: .3s;
-  }
-  footer ul li a:hover {
-    text-decoration:none;
-    color:white;
-  }
-  footer svg {
-    width:20%;
-  }
-  footer p{
-    font-size: 1em;
-  }
+footer{
+  grid-area:f;
+  height: 3vh !important;
+  grid-gap: 3px;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  justify-items: center;
+  align-items: center;
+}
+
+footer {
+  text-align: center;
+}
+footer p{
+  font-size:2em;
+}
+footer li {
+  display:inline;
+}
+footer ul {
+  max-width: 640px;
+  margin: 2em auto;
+  padding:0;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+}
+footer ul li{
+  list-style: none;
+  align-self:flex-end;
+}
+footer ul li a {
+  text-decoration:none;
+  color: black;
+  opacity:.6;
+  transition: .3s;
+}
+footer ul li a:hover {
+  text-decoration:none;
+  color:white;
+}
+footer svg {
+  width:20%;
+}
+footer p{
+  font-size: 1em;
+}
+  
 
 
 
@@ -437,4 +442,52 @@ footer{
 }
 
 
+
+   /* footer section */
+   footer{
+    display: grid;
+    height: 10vh !important;
+    grid-gap: 3px;
+    padding-top: 5vh;
+    width: 100%
+    padding-bottom: 10vh;
+    justify-items: center;
+    align-items: center;
+ 
+  }
+  
+  footer p{
+    font-size: 2em;
+  }
+  footer li {
+    display:inline;
+  }
+  footer ul {
+    max-width: 640px;
+    margin: 2em auto;
+    padding:0;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+  }
+  footer ul li{
+    list-style: none;
+    align-self:flex-end;
+  }
+  footer ul li a {
+    text-decoration:none;
+    color: black;
+    opacity:.6;
+    transition: .3s;
+  }
+  footer ul li a:hover {
+    text-decoration:none;
+    color:white;
+  }
+  footer svg {
+    width:5%;
+  }
+  footer p{
+    font-size: 1em;
+  }
 

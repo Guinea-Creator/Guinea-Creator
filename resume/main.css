@@ -17,6 +17,8 @@ li{font-family: 'Roboto', sans-serif;}
 .container {
   display: grid;
   align-items:center; 
+  margin-left: 1em;
+  margin-right: 1em;
   grid-template-columns: (1fr);
   grid-template-rows: auto;
   grid-template-areas:
@@ -24,6 +26,8 @@ li{font-family: 'Roboto', sans-serif;}
   } 
 
 .top-banner-section{
+  margin-left: 1em;
+  margin-right: 1em;
 display: grid;
 grid-template-columns: 1fr;
 grid-column-gap: 8 px;
@@ -32,17 +36,16 @@ align-content: center;
 justify-content: center;
 }
 
-
-
 .banner-graph1-div{
   grid-area: 1 / 1 / 2 / 2;}
 
+
 .banner-icon-div{
   grid-area: 1 / 1 / 2 / 2;
-  margin-top: 50px;
+  margin-top: 47px;
 margin-left: 10em;
-width: 150px;
-height: 150px;}
+width: 145px;
+height: 145px;}
 
 
 .banner-graph1-div{
@@ -98,7 +101,7 @@ nav{
   }
   
   nav li a:hover {
-    color:rgb(240, 253, 57);
+    color:rgb(242, 243, 223);
     opacity: 1;
     text-decoration: none;
   }
@@ -135,7 +138,8 @@ footer{
     display: grid;
     background-color:rgb(234, 238, 240);
     height: 100%;
-    grid-gap: 15px;
+  min-width:  15px;
+
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas:
@@ -191,7 +195,7 @@ footer{
 
 /* footer section */
 footer{
-  grid-area:footer;
+  grid-area:f;
   height: 3vh !important;
   grid-gap: 3px;
   padding-top: 10vh;
