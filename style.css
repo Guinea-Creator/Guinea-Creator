@@ -32,6 +32,7 @@ justify-content: center;
   grid-area: 1 / 1 / 2 / 2;
   margin-top: 15px;
 margin-left: 35em;
+
 width: 25px;
 height: 25px;}
 
@@ -111,8 +112,8 @@ text-align: justify;}
 
 
 
-.contact-title {
-  font-size: 2em;
+.welcome-title {
+  font-size: 3em;
   grid-area: title;
   padding-bottom: 85px;
   padding-top:  15px;}
@@ -127,9 +128,10 @@ text-align: justify;}
   text-indent: 2em;}
 
 .icon.png{
-  margin-left: 60px;
+  margin-left: 10px;
 
-   width: 200px;
+   width: 15px;
+   height: 15px;
 }
 
 
@@ -220,12 +222,12 @@ nav{
 
 /* IMAGE GALLERY CSS */
 .image-gallery {
-  height: 100%;
+  height: 90%;
   display: grid;
   grid-template-columns: 1fr minmax(350px, 1fr)  minmax(350px, 1fr) minmax(350px, 1fr) 1fr;
   grid-template-rows: auto;
   grid-gap: 10px;
-  padding-top: 500px;
+  padding-top: 540px;
   padding-bottom: 100px;
 
   grid-template-areas:
