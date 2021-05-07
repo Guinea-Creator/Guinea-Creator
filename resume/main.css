@@ -11,7 +11,7 @@ li{font-family: 'Roboto', sans-serif;}
 * {
     font-family: 'Roboto', sans-serif;
     margin: 0;
-    padding: 0;
+    apadding: 0;
 }
 
 .container {
@@ -34,6 +34,8 @@ grid-column-gap: 8 px;
 grid-row-gap: 8 px;
 align-content: center;
 justify-content: center;
+background-image: url('assets/graph1.svg');
+background-repeat:repeat-x;
 }
 
 .banner-graph1-div{
@@ -143,32 +145,14 @@ footer{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas:
-    "o t"
+    "o o"
     "e t"
-    "x c"
+    "e t"
+	"p c"
     "f f";
+	align-items: start;
 }
 
-/* Step 3 Build your mobile grid What becomes active when the pixels are 800 or less*/
-@media screen and (max-width: 1000px) {
-
-.container{
-display: grid;
-/* background-color: rgb(99, 14, 185); */
-grid-gap: 3px;
-grid-template-columns: 1fr;
-grid-template-rows: auto;
-grid-template-areas:
-/* "h" */
-"o"
-"e"
-"p"
-"t"
-"c"
-"f";
-}
-
-/* Step 1 This Starts the section css tags */
 .objective{
     grid-area: o;
 }
@@ -191,6 +175,28 @@ grid-template-areas:
 
 footer{
         grid-area: f;}
+
+
+/* Step 3 Build your mobile grid What becomes active when the pixels are 800 or less*/
+@media screen and (max-width: 1000px) {
+
+.acontainer{
+display: grid;
+/* background-color: rgb(99, 14, 185); */
+grid-gap: 3px;
+grid-template-columns: 1fr;
+grid-template-rows: auto;
+grid-template-areas:
+/* "h" */
+"o"
+"e"
+"p"
+"t"
+"c"
+"f";
+}
+
+
 }
 
 /* footer section */
